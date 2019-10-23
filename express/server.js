@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 
 const router = express.Router()
 router.get('/', (req, res) => {
+  res.setHeader('Content-Type', 'application/json')
   res.json([
     {
       customerId: 'cab8e18b-4a68-4396-9f10-692c39ae477a',
